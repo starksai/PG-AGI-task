@@ -5,8 +5,6 @@ import { useEffect, useState } from "react"
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false)
-  const [currentTime, setCurrentTime] = useState(new Date())
-  const [taglineIndex, setTaglineIndex] = useState(0)
 
   const taglines = [
     "Stay Informed with News!",
@@ -26,21 +24,8 @@ export default function Home() {
     }
   }, [])
 
-  // Update current time every second
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentTime(new Date())
-    }, 1000)
-    return () => clearInterval(timer)
-  }, [])
-
-  // Cycle through taglines every 3 seconds
-  useEffect(() => {
-    const taglineTimer = setInterval(() => {
-      setTaglineIndex(prev => (prev + 1) % taglines.length)
-    }, 3000)
-    return () => clearInterval(taglineTimer)
-  }, [])
+ 
+ 
 
   const toggleTheme = () => {
     setIsDarkMode(prev => {
@@ -78,15 +63,7 @@ export default function Home() {
           </button>
         </div>
 
-        {/* Real-Time Showcase */}
-        <div className="text-center mb-8">
-          <p className="text-xl text-gray-700 dark:text-gray-300">
-            Current Time: {currentTime.toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata' })}
-          </p>
-          <p className="text-lg font-semibold text-gray-900 dark:text-white mt-2 animate-fadeIn">
-            {taglines[taglineIndex]}
-          </p>
-        </div>
+        
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* News Dashboard Card */}
