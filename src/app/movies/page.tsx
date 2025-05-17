@@ -2,7 +2,7 @@
 import { fetchTrendingMovies } from "@/services/MoviesService";
 import { useEffect, useState } from "react"
 
-export default function moviesDashboard() {
+export default function MoviesDashboard() {
     const [movieData, setMovieData] = useState<any>(null);
 
 
