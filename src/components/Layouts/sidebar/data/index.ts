@@ -13,8 +13,8 @@ export const NAV_DATA = [
             url: "/weather",
           },
           {
-            title: "Movies",
-            url: "/movies",
+            title: "Finance",
+            url: "/finance",
           },
           {
             title: "News",

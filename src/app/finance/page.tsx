@@ -71,7 +71,7 @@ export default function FinanceDashboard() {
                 data: volumes,
                 backgroundColor: '#22c55e',
                 yAxisID: 'y1',
-                type: 'bar' as const,
+                type: 'line' as const,
             },
         ],
     };
