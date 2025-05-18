@@ -72,7 +72,7 @@ export function Sidebar() {
             >
               {/* <Logo /> */}
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
-                PG-AGI DASHBOARDS
+                PG-AGI
               </h1>
             </Link>
 
