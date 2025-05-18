@@ -8,6 +8,10 @@ export const NAV_DATA = [
         title: "Dashboard",
         icon: Icons.HomeIcon,
         items: [
+           {
+            title: "Home",
+            url: "/",
+          },
           {
             title: "Weather",
             url: "/weather",
